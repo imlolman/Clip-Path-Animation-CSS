@@ -1,0 +1,77 @@
+.heading,
+h3 {
+  text-align: center;
+}
+
+* .inner {
+  padding: 10px 15px;
+  color: #fff;
+  border-radius: 3px;
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+  cursor: pointer;
+}
+
+* .inner .info {
+  position: absolute;
+  right: 40px;
+  font-size: 30px;
+  font-weight: 700;
+  opacity: 1;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+* .inner h2,
+* .inner p {
+  opacity: 0;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+* .inner:hover .info, * .inner:active .info {
+  opacity: 0;
+}
+
+* .inner:hover h2,
+* .inner:hover p, * .inner:active h2,
+* .inner:active p {
+  opacity: 1;
+}
+
+.outer1 .inner {
+  background: #3498db;
+  -webkit-clip-path: circle(10% at calc(100% - 30px) 30px);
+          clip-path: circle(10% at calc(100% - 30px) 30px);
+}
+
+.outer1 .inner:hover, .outer1 .inner:active {
+  background: #2ecc71;
+  -webkit-clip-path: circle(100%);
+          clip-path: circle(100%);
+}
+
+.outer2 .inner {
+  background: #34495e;
+  -webkit-clip-path: polygon(100% 0px, 100% 60px, calc(100% - 60px) 60px, calc(100% - 60px) 0px);
+          clip-path: polygon(100% 0px, 100% 60px, calc(100% - 60px) 60px, calc(100% - 60px) 0px);
+}
+
+.outer2 .inner:hover, .outer2 .inner:active {
+  background: #9b59b6;
+  -webkit-clip-path: polygon(100% 0%, 100% 100%, 0% 100%, 0% 0%);
+          clip-path: polygon(100% 0%, 100% 100%, 0% 100%, 0% 0%);
+}
+
+.outer3 .inner {
+  background: #e74c3c;
+  -webkit-clip-path: circle(70px at calc(100%) calc(0%));
+          clip-path: circle(70px at calc(100%) calc(0%));
+}
+
+.outer3 .inner:hover, .outer3 .inner:active {
+  background: #f1c40f;
+  -webkit-clip-path: circle(100%);
+          clip-path: circle(100%);
+}
+/*# sourceMappingURL=main.css.map */

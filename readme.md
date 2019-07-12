@@ -1,0 +1,1 @@
+# Some Clip Path Animation Usage Without Javascript 😉
